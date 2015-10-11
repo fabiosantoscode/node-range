@@ -20,4 +20,7 @@ describe("range", function() {
       assert(cmp.eq(range.range(3, 0, -2), [3, 1]), "regression: if step is not divisible by abs(start - stop) we get an infinite loop (negative step now)");
     });
   });
+  it("Should export the range() function, and also range.range() as a property", function() {
+    assert.strictEqual(range, range.range);
+  })
 });

@@ -6,7 +6,7 @@ range.js is a Node library approximation of Python's `range()` function.
 
 ```
 $ node
-> var range = require("range").range;
+> var range = require("range");
 > range(0, 20);
 [ 0,
   1,
